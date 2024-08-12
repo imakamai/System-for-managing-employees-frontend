@@ -1,0 +1,44 @@
+<div>
+  <h2>Add New Employee</h2>
+
+  <form (ngSubmit)="saveEmployee()">
+    <div>
+      <label for="name">First Name:</label>
+      <input type="text" id="name" [(ngModel)]="newEmployee.name" name="name" required>
+    </div>
+
+    <div>
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" [(ngModel)]="newEmployee.lastname" name="lastname" required>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="newEmployee.email" name="email" required>
+    </div>
+
+    <div>
+      <label for="registrationNumber">Registration Number:</label>
+      <input type="number" id="registrationNumber" [(ngModel)]="newEmployee.registrationNumber"
+             name="registrationNumber" required>
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="newEmployee.password" name="password" required>
+    </div>
+
+    <div>
+      <label for="role">Role:</label>
+      <input type="text" id="role" [(ngModel)]="newEmployee.role" name="role" required>
+    </div>
+
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="newEmployee.username" name="username" required>
+    </div>
+
+    <button type="submit">Save Employee</button>
+    <button type="button" (click)="resetForm()">Cancel</button>
+  </form>
+</div>

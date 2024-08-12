@@ -1,0 +1,44 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.edit-form {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.edit-form form div {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.button-group button {
+  margin-right: 10px;
+}
+
+.button-group button:last-child {
+  margin-right: 0;
+}
+
+.button-container {
+  display: flex;
+}
+
+
